@@ -20,12 +20,17 @@ export class LivroListaComponent implements OnInit {
     this.livros = this.servLivros.obterLivros();
   }
 
-  excluir = (codigo: number): void => {
+  excluir(codigo: number | undefined): void {
+    if (codigo !== undefined) {
     this.servLivros.excluir(codigo);
     this.livros = this.servLivros.obterLivros();
+    }
   }
 
-  obterNome = (codEditora: number): string => {
-    return this.servEditora.getNomeEditora(codEditora);
+  obterNome(codEditora: number | undefined): string {
+    if (codEditora !== undefined) {
+      return this.servEditora.getNomeEditora(codEditora);
+    }
+    return 'Não foi possivel obter o livro';
   }
 }

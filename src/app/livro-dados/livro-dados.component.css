@@ -1,0 +1,9 @@
+.titulo-vazio {
+    border-color: red; /* Altere a cor da borda para vermelho */
+  }
+  
+  .aviso {
+    color: red; /* Altere a cor do texto do aviso para vermelho */
+    font-size: 12px; /* Ajuste o tamanho da fonte do aviso */
+  }
+  

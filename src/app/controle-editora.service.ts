@@ -6,9 +6,9 @@ import { Editora } from './editora'; // Importe a classe Editora aqui
 })
 export class ControleEditoraService {
   editoras: Editora[] = [
-    { codEditora: 1, nome: 'Editora A' },
-    { codEditora: 2, nome: 'Editora B' },
-    { codEditora: 3, nome: 'Editora C' }
+    { codEditora: 1, nome: 'Alta Books' },
+    { codEditora: 2, nome: 'Pearson' },
+    { codEditora: 3, nome: 'Holliday' }
   ];
 
   constructor() { }
